@@ -1,0 +1,243 @@
+.container__event-section {
+  width: 100%;
+}
+
+/***************************************************************************************************************
+                                   HEADER EVENT
+****************************************************************************************************************/
+
+.event__header-container {
+  padding: 0.5rem;
+  background-color: #f8fafc;
+}
+
+.event__filter-location {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  padding: 1rem;
+  width: fit-content;
+
+  h2 {
+    display: block;
+    width: 100%;
+    color: #0f172a;
+    font-size: clamp(1.5rem, 0.264rem + 2.762vw, 2.75rem);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    font-size: clamp(1.2rem, 0.264rem + 2.762vw, 2.75rem);
+    font-weight: bolder;
+    color: #0284c7;
+    caret-color: transparent;
+  }
+
+  input::placeholder::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-bottom: 1px solid;
+  }
+
+  input:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(87, 86, 84, 0.51) 30%;
+  }
+}
+
+.event__filter-type {
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+}
+
+.filter__container {
+  padding: 1rem 0rem;
+}
+
+.list__items {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 1rem;
+}
+
+.items {
+  font-weight: bold;
+  font-size: clamp(1.2rem, -0.8vw, 1.5rem);
+  color: #6f7287;
+  margin-right: 2rem;
+}
+
+.items:hover {
+  color: #0284c7;
+}
+
+.event__select {
+}
+
+.select {
+  width: 40%;
+  padding: 0.5rem 0rem;
+  font-weight: bold;
+  text-align: center;
+  color: #0284c7;
+}
+
+/***************************************************************************************************************
+                                   RESPONSIVE PARA DISPOSITIVOS MOBILES Y TABLET
+****************************************************************************************************************/
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .event__filter-location {
+    width: 100%;
+  }
+
+  .event__filter-location {
+    display: flex;
+    gap: 0.5rem;
+
+    h2 {
+      text-align: unset;
+      width: 70%;
+    }
+  }
+
+  input {
+    text-transform: uppercase;
+    width: 30%;
+  }
+
+  .select {
+    width: 100%;
+  }
+
+  /***************************************************************************************************************
+                                   ESTE MEDIA ES EL INTERVALO QUE ROMPE ENTRE DISPOSITIVOS Y ESCRITORIOS (653-1200)
+  ****************************************************************************************************************/
+  @media screen and (min-width: 653px) and (max-width: 1200px) {
+    .event__filter-location {
+      width: 70%;
+    }
+  }
+}
+
+/***************************************************************************************************************
+                                   HEADER BODY
+****************************************************************************************************************/
+
+.event__body-container {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #f8fafc;
+}
+
+.body__container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cards__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/*AQUI ESTAN LOS ESTILOS QUE PERTENECEN A LA CARD*/
+.card__container {
+  min-width: 300px;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 0.5px solid;
+}
+
+.card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.card__main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-event {
+  width: 300px;
+}
+
+.card__info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.card__price {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  color: #6f7287;
+}
+
+.card__main-title {
+  padding: 1rem 0rem;
+  text-transform: uppercase;
+}
+
+.card__description {
+  display: block;
+}
+
+.card__ponente {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.ponente__image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ponente__image {
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #0284c7;
+}
+
+.ponente__info {
+  display: block;
+  padding: 1rem 0.5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .body__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cards__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card__container {
+    display: flex;
+    flex-direction: column;
+  }
+  /***************************************************************************************************************
+                                   ESTE MEDIA ES EL INTERVALO QUE ROMPE ENTRE DISPOSITIVOS Y ESCRITORIOS (653-1200)
+  ****************************************************************************************************************/
+  @media screen and (min-width: 653px) and (max-width: 1200px) {
+  }
+}
