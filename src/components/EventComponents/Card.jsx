@@ -22,7 +22,7 @@ export const Card = ({ event }) => {
           <div className={styles["ponente__image-container"]}>
             <img
               className={styles.ponente__image}
-              src={`./src/assets/images/imagesPonentes/speaker_${speakerID}.png`}
+              src={`assets/images/imagesPonentes/speaker_${speakerID}.png`}
               alt=""
             />
           </div>
@@ -33,11 +33,7 @@ export const Card = ({ event }) => {
         </div>
       </div>
       {/* La siguiente imagen parece estar fuera del conflicto */}
-      <img
-        className={styles.ponente__image}
-        src={`assets/images/imagesPonentes/speaker_${speakerID}.png`}
-        alt=""
-      />
+      
     </div>
   );
 };
