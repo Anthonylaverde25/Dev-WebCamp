@@ -3,7 +3,7 @@ import styles from "./event.module.css";
 
 export const Card = ({ event }) => {
   const { speakerID, title, description, price, speaker, date, image } = event;
-  const imagePath = `/src/assets/images/imagesIconos/${image}`;
+  const imagePath = `assets/images/imagesIconos/${image}`;
   return (
     <div className={styles.card__container}>
       <div className={styles["card__image"]}>
@@ -33,7 +33,6 @@ export const Card = ({ event }) => {
         </div>
       </div>
       {/* La siguiente imagen parece estar fuera del conflicto */}
-      
     </div>
   );
 };
