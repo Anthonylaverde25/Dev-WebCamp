@@ -25,16 +25,22 @@ export const Card = ({ event }) => {
           <div className={styles["ponente__image-container"]}>
             <img
               className={styles.ponente__image}
-              src={`/src/assets/images/imagesPonentes/speaker_${speakerID}.png`}
+              src={`src/assets/images/imagesPonentes/speaker_${speakerID}.png`}
               alt=""
             />
           </div>
           <div className={styles.ponente__info}>
             <span>{speaker}</span>
+
             <p>{date}</p>
           </div>
         </div>
       </div>
+      <img
+        className={styles.ponente__image}
+        src={`public/assets/images/imagesPonentes/speaker_${speakerID}.png`}
+        alt=""
+      />
     </div>
   );
 };
