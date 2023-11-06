@@ -35,7 +35,7 @@ export const Card = ({ event }) => {
       {/* La siguiente imagen parece estar fuera del conflicto */}
       <img
         className={styles.ponente__image}
-        src={`./public/assets/images/imagesPonentes/speaker_${speakerID}.png`}
+        src={`assets/images/imagesPonentes/speaker_${speakerID}.png`}
         alt=""
       />
     </div>
