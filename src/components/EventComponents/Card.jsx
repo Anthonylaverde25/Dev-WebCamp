@@ -1,7 +1,4 @@
 import React from "react";
-//import imageConference from "../../assets/images/imagesIconos/php-1.svg";
-//import imageConferenceJS from "../../assets/images/imagesIconos/logo-javascript.svg";
-
 import styles from "./event.module.css";
 
 export const Card = ({ event }) => {
@@ -25,17 +22,17 @@ export const Card = ({ event }) => {
           <div className={styles["ponente__image-container"]}>
             <img
               className={styles.ponente__image}
-              src={`src/assets/images/imagesPonentes/speaker_${speakerID}.png`}
+              src={`./src/assets/images/imagesPonentes/speaker_${speakerID}.png`}
               alt=""
             />
           </div>
           <div className={styles.ponente__info}>
             <span>{speaker}</span>
-
             <p>{date}</p>
           </div>
         </div>
       </div>
+      {/* La siguiente imagen parece estar fuera del conflicto */}
       <img
         className={styles.ponente__image}
         src={`public/assets/images/imagesPonentes/speaker_${speakerID}.png`}
